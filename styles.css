@@ -1,0 +1,67 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 4fr;
+	grid-template-areas:
+		"nav nav"
+		"main main";
+}
+
+nav {
+	grid-area: nav;
+	justify-self: center;
+}
+
+.main {
+	grid-area: main;
+}
+
+.book {
+	border-style: solid;
+	border-color: blue;
+	height: 300px;
+	width: 200px;
+}
+
+nav input {
+	border-radius: 10px;
+}
+
+form {
+	display: none;
+}
+
+.form {
+	height: 60vh;
+	width: 30vw;
+	position: absolute;
+	left: 40%;
+	top: 30%;
+	z-index: 1;
+}
+.bookData {
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 500px;
+	border-style: solid;
+}
+
+.bookData input {
+	height: 20px;
+}
+
+#bookContent {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+.left {
+	grid-area: left;
+}
+
+.right {
+	grid-area: right;
+}

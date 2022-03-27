@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Library</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<nav id="nav">
+			<h1>George's library</h1>
+			<input type="button" value="Add book" id="add" onclick="showForm()" />
+		</nav>
+
+		<div class="main">
+			<div class="form">
+				<form action="#" id="form">
+					<div class="bookData">
+						<label for="name">Name:</label>
+						<input type="text" name="name" id="name" />
+
+						<label for="author">Author:</label>
+						<input type="text" name="author" id="author" />
+
+						<label for="year">Year:</label>
+						<input type="text" name="year" id="year" />
+
+						<label for="pages">Number of pages:</label>
+						<input type="text" name="pages" id="pages" />
+
+						<label for="read">Read?:</label>
+						<input type="checkbox" name="isRead" id="isRead" />
+
+						<button type="button" id="button">Add</button>
+					</div>
+				</form>
+			</div>
+
+			<div id="bookContent"></div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
